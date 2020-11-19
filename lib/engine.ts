@@ -47,7 +47,9 @@ export class ExprEnginError extends Error {
 }
 
 
-const AsyncFunction = Object.getPrototypeOf(async function () { }).constructor
+const AsyncFunction = (async function () { }).constructor as {
+  new (args: string, code: string): (...args: any[]) => Promise<any>
+}
 
 export class ExprEngine {
   constructor(options: ExprEngineOptions) {
@@ -88,8 +90,7 @@ export class ExprEngine {
     const argDefines = ['$', '_']
     try {
       // 编译表达式为异步函数
-      fn = new AsyncFunction(argDefines, code)
-      console.log(fn.toString())
+      fn = new AsyncFunction(argDefines.join(','), code)
     } catch (err) {
       throw new ExprEnginError('编译表达式失败，表达式语法错误：' + err.message, exp, code)
     }

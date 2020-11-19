@@ -24,7 +24,7 @@ describe('engine', function () {
   })
 
   it('exec', async () => {
-    const engin = require('../index').create()
+    const engin = create()
     const txt = await engin.exec('$days($.expiryDate, $now)', { expiryDate: new Date(2019, 12, 18) })
     console.log(txt)
   })
