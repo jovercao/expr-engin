@@ -6,7 +6,9 @@
     "esModuleInterop": true,
     "target": "ES2017",
     "moduleResolution": "Node",
-    "outDir": "dist"
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true
   },
   "include": [
     "lib"

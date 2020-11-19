@@ -49,7 +49,7 @@ export class ExprEnginError extends Error {
 
 const AsyncFunction = Object.getPrototypeOf(async function () { }).constructor
 
-class ExprEngine {
+export class ExprEngine {
   constructor(options: ExprEngineOptions) {
     this._helpers = Object.assign({}, options.helpers || {})
   }
