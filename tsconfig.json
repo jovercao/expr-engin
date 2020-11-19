@@ -3,8 +3,9 @@
     "lib": [
       "ES2017"
     ],
+    "module": "CommonJS",
     "esModuleInterop": true,
-    "target": "ES2017",
+    "target": "ES5",
     "moduleResolution": "Node",
     "outDir": "dist",
     "declaration": true,
