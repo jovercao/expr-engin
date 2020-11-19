@@ -1,33 +1,6 @@
 {
   "name": "@jovercao/expr-engine",
-  "_args": [
-    [
-      "j3-expr-engine@0.1.0",
-      "D:\\workspace\\projects\\j3\\erp-server"
-    ]
-  ],
-  "_from": "j3-expr-engine@0.1.0",
-  "_id": "j3-expr-engine@0.1.0",
-  "_inBundle": false,
-  "_integrity": "sha1-sUturG/S49qZvOlG0tE5EnEnbIY=",
-  "_location": "/j3-expr-engine",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "j3-expr-engine@0.1.0",
-    "name": "j3-expr-engine",
-    "escapedName": "j3-expr-engine",
-    "rawSpec": "0.1.0",
-    "saveSpec": null,
-    "fetchSpec": "0.1.0"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npm.taobao.org/j3-expr-engine/download/j3-expr-engine-0.1.0.tgz",
-  "_spec": "0.2.0",
-  "_where": "D:\\workspace\\projects\\j3\\erp-server",
+  "version": "0.2.0",
   "author": {
     "name": "JoverCao"
   },
@@ -47,7 +20,6 @@
     "test": "mocha --require ts-node/register --extensions ts,tsx 'test/**/*{ts,tsx}'",
     "build": "tsc"
   },
-  "version": "0.1.0",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
