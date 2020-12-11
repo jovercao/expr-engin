@@ -6,6 +6,9 @@ export * from './engine'
 
 import * as helpers from './helpers'
 
+
+export type ExprHelpers = typeof helpers
+
 export {
   helpers
 }
